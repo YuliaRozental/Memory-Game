@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+.row {
+text-align: center;
+}
+
+.card {
+display: inline-block;
+width: 100px;
+height: 100px;
+background-color: #eee;
+cursor: pointer;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.yellow {
+    background-color: lightgoldenrodyellow;
+}
+
+.blue {
+    background-color: lightblue;
+}
