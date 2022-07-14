@@ -5,29 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Memory Game</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
+        <link rel="stylesheet" href="./style.css" />
+    </head> 
     <body>
-        <div class="game">
-            <div class="controls">
-                <button>Start</button>
-                <div class="start">
-                    <div class="timer">Time: 0 sec</div>
-                    <div class="score">Your score:</div>
-                </div>
-            </div>
-            <div class="board-container">
-            <div class="row">
-              <div type="button" id="pink" class="card pink"></div>
-              <div type="button" id="teal" class="card teal"></div>
-            </div>
-            <div class="row">
-               <div type="button" id="yellow" class="card yellow"></div>
-               <div type="button" id="blue" class="card blue"></div>
-            </div>
+    <main class="game">
+        <header>
+            <h1 class="heading js-heading">Play Memory Game</h1>
+         </header>  
+
+        <div class="board-container js-container unclickable">
+              <div class="card pink" data-card="pink"></div>
+              <div class="card teal" data-card="teal"></div>
+              <div class="card orange" data-card="orange"></div>
+              <div class="card yellow" data-card="yellow"></div>
+              <div class="card red" data-card="red"></div>
+              <div class="card blue" data-card="blue"></div>
         </div>
+
+    <div class="info-section">
+        <button class="start-button js-start">Start</button>
+        <span class="info js-info hidden"></span>
     </div>
-        <script src="script.js" defer></script>
-    </body>
+    </main>
+
+    <script src="./script.js" defer></script>
+</body>
 </html>
 

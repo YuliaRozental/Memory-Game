@@ -1,30 +1,169 @@
 body {
-    text-align: center;
-}
-.row {
-text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
 }
 
-.card {
-display: inline-block;
-width: 100px;
-height: 100px;
-background-color: #eee;
-cursor: pointer;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    text-align: center;
+    font-size: 18px;
+}
+  
+.heading {
+    font-size: 3em;
+}
+
+.board-container {
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+.unclickable {
+    pointer-events: none;
 }
 
 .pink {
     background-color: pink;
+    transition: 0.15s;
+}
+
+.pink:hover,
+.pink:focus {
+    background-color: rgb(248, 140, 160);
+}
+    
+.pink:active,
+.pink.activated {
+    transform: translateY(10px);
 }
 
 .teal {
     background-color: teal;
+    transition: 0.15s;
+}
+  
+.teal:hover,
+.teal:focus {
+    background-color: rgb(12, 156, 156) 
+}   
+
+.teal:active,
+.teal.activated {
+    transform: translateY(10px);
 }
 
 .yellow {
     background-color: lightgoldenrodyellow;
+    transition: 0.15s;
 }
+
+.yellow:hover,
+.yellow:focus {
+    background-color: rgb(244, 244, 92);
+}
+
+.yellow:active,
+.yellow.activated {
+  transform: translateY(10px);
+}
+
 
 .blue {
     background-color: lightblue;
+    transition: 0.15s;
 }
+
+.blue:hover,
+.blue:focus {
+    background-color: rgb(154, 223, 246);
+}
+
+.blue:active,
+.blue.activated {
+    transform: translateY(10px);
+}
+
+.red {
+    background-color:tomato;
+    transition: 0.15s;
+}
+
+.red:hover,
+.red:focus {
+    background-color:rgb(245, 151, 135);
+}
+
+.red:active,
+.red.activated {
+    transform: translateY(10px);
+}
+
+.orange {
+    background-color: darkorange;
+    transition: 0.15s;
+}
+    
+.orange:hover,
+.orange:focus {
+    background-color: rgb(245, 181, 104);
+}
+
+.orange:active,
+.orange.activated {
+    transform: translateY(10px);
+}
+
+.info-section {
+    text-align: center;
+}
+  
+.start-button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+  
+  .start-button:hover {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+  
+  .info {
+    font-size: 22px;
+}
+  
+  
