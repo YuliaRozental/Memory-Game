@@ -108,5 +108,5 @@ startButton.addEventListener('click', startGame);
 boardContainer.addEventListener('click', event => {
   const { card } = event.target.dataset;
 
-  if (tile) handleClick(tile);
+  if (card) handleClick(card);
 });
