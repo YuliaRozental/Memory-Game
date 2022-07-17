@@ -21,7 +21,12 @@ MVP Criteria
 3. Cards must illumination and move more quickly. Making it harder to memorize or recollect the correct pattern.
 3. Game must alert the player about the score after each round completed
 
+
+
+
 Post-MVP Plans
 
 1. Add more squares (4X4)
 2. Cnahge the style
+
+
