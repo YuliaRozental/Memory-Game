@@ -27,6 +27,7 @@ MVP Criteria
 Post-MVP Plans
 
 1. Add more squares (4X4)
-2. Cnahge the style
+2. Cnahge the style of the cards 
+3. Add interesting music or sound effects to your game
 
 
