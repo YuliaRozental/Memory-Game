@@ -28,8 +28,10 @@ function humanTurn(level) {
 
 function activateCard(color) {
     const card = document.querySelector(`[data-card='${color}']`);
+    const sound = document.querySelector(`[data-sound='${color}']`);
 
     card.classList.add('activated');
+    sound.play();
 
     setTimeout(() => {
     card.classList.remove('activated');
