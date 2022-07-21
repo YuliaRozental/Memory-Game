@@ -20,6 +20,7 @@ MVP Criteria
 2. Game must alert the player if he didn't repeat the sequence correctly
 3. Cards must illumination and move more quickly. Making it harder to memorize or recollect the correct pattern.
 3. Game must alert the player about the score after each round completed
+4. Add interesting music or sound effects to your game
 
 
 
@@ -28,6 +29,5 @@ Post-MVP Plans
 
 1. Add more squares (4X4)
 2. Cnahge the style of the cards 
-3. Add interesting music or sound effects to your game
 
 
