@@ -1,0 +1,24 @@
+{
+  "name": "milestoneproject1",
+  "version": "1.0.0",
+  "description": "Project Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuliaRozental/Milestone-Project-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuliaRozental/Milestone-Project-1/issues"
+  },
+  "homepage": "https://github.com/YuliaRozental/Milestone-Project-1#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.17"
+  }
+}

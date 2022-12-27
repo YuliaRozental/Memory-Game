@@ -1,0 +1,208 @@
+@import "utilities";
+
+
+$color_1: #716b6b;
+$color_2: #575252;
+$font-family_1: 'Rubik', sans-serif;
+$background-color_1: pink;
+$background-color_2: rgb(248, 140, 160);
+$background-color_3: rgba(0, 128, 128, 0.448);
+$background-color_4: rgb(12, 156, 156);
+$background-color_5: lightgoldenrodyellow;
+$background-color_6: rgb(244, 244, 92);
+$background-color_7: rgba(173, 216, 230, 0.924);
+$background-color_8: rgb(154, 223, 246);
+$background-color_9: rgb(245, 151, 135);
+$background-color_10: tomato;
+$background-color_11: rgba(255, 140, 0, 0.557);
+$background-color_12: rgb(246, 167, 70);
+$background-color_13: white;
+$border-color_1: #888;
+
+body {
+	display: flex;
+	justify-content: center;
+	font-family: $font-family_1;
+	background-image: url('/assets/background.jpeg');
+	background-size: cover;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	&::after {
+		margin: 0;
+		padding: 0;
+		box-sizing: inherit;
+	}
+	&::before {
+		margin: 0;
+		padding: 0;
+		box-sizing: inherit;
+	}
+}
+.game {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+header {
+	text-align: center;
+	font-size: 18px;
+	color: $color_1;
+}
+.head-two {
+	margin-top: 20px;
+}
+.hidden {
+	display: none !important;
+}
+.heading {
+	font-size: 3em;
+}
+.board-container {
+	display: grid;
+	grid-template-rows: 150px 150px;
+	grid-template-columns: 150px 150px 150px;
+	grid-gap: 15px;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+}
+.unclickable {
+	pointer-events: none;
+}
+.pink {
+	background-color: $background-color_1;
+	transition: 0.15s;
+	border-radius: 12px;
+	&:hover {
+		background-color: $background-color_2;
+	}
+	&:focus {
+		background-color: $background-color_2;
+	}
+	&:active {
+		transform: translateY(10px);
+	}
+}
+.pink.activated {
+	transform: translateY(10px);
+}
+.teal {
+	background-color: $background-color_3;
+	transition: 0.15s;
+	border-radius: 12px;
+	&:hover {
+		background-color: $background-color_4;
+	}
+	&:focus {
+		background-color: $background-color_4;
+	}
+	&:active {
+		transform: translateY(10px);
+	}
+}
+.teal.activated {
+	transform: translateY(10px);
+}
+.yellow {
+	background-color: $background-color_5;
+	transition: 0.15s;
+	border-radius: 12px;
+	&:hover {
+		background-color: $background-color_6;
+	}
+	&:focus {
+		background-color: $background-color_6;
+	}
+	&:active {
+		transform: translateY(10px);
+	}
+}
+.yellow.activated {
+	transform: translateY(10px);
+}
+.blue {
+	background-color: $background-color_7;
+	transition: 0.15s;
+	border-radius: 12px;
+	&:hover {
+		background-color: $background-color_8;
+	}
+	&:focus {
+		background-color: $background-color_8;
+	}
+	&:active {
+		transform: translateY(10px);
+	}
+}
+.blue.activated {
+	transform: translateY(10px);
+}
+.red {
+	background-color: $background-color_9;
+	transition: 0.15s;
+	border-radius: 12px;
+	&:hover {
+		background-color: $background-color_10;
+	}
+	&:focus {
+		background-color: $background-color_10;
+	}
+	&:active {
+		transform: translateY(10px);
+	}
+}
+.red.activated {
+	transform: translateY(10px);
+}
+.orange {
+	background-color: $background-color_11;
+	transition: 0.15s;
+	border-radius: 12px;
+	&:hover {
+		background-color: $background-color_12;
+	}
+	&:focus {
+		background-color: $background-color_12;
+	}
+	&:active {
+		transform: translateY(10px);
+	}
+}
+.orange.activated {
+	transform: translateY(10px);
+}
+.info-section {
+	text-align: center;
+}
+.start-button {
+	display: inline-block;
+	height: 38px;
+	padding: 0 30px;
+	color: $color_1;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 38px;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: $background-color_13;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+	cursor: pointer;
+	&:hover {
+		color: $color_1;
+		border-color: $border-color_1;
+		outline: 0;
+	}
+}
+.info {
+	font-size: 22px;
+	color: $color_2;
+}
